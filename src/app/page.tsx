@@ -65,7 +65,7 @@ export default function Home() {
                 <span className="neon-text">Sudhagar</span> Babuchockalingam
               </h1>
               <p className="text-purple-100/80 mt-6 max-w-xl">
-                4+ years building reliable, high-performance systems. Led CL Echo from hackathon to production, architected ERP migrations, and optimized services handling millions of requests/day.
+                Delivering innovative full‑stack solutions across diverse requirements — with a focus on performance, resilience, and delightful user experience.
               </p>
               <div className="flex items-center gap-4 mt-8">
                 <Link href="mailto:sudhagarjb@gmail.com" className="card-gradient px-4 py-2 rounded-md glow inline-flex items-center gap-2">
@@ -94,7 +94,7 @@ export default function Home() {
                   <Sparkles className="w-24 h-24 text-purple-300" />
                 </div>
                 <p className="mt-4 text-purple-200/80 text-sm">
-                  Passionate about DX, system design, and animation-rich frontends.
+                  Crafting high‑impact DX and animation‑forward interfaces.
                 </p>
               </div>
             </motion.div>

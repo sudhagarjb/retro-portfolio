@@ -16,16 +16,16 @@ function ColorOrbs() {
   return (
     <group ref={group}>
       <mesh position={[6, 2, -8]}>
-        <sphereGeometry args={[1.4, 32, 32]} />
-        <meshBasicMaterial color="#7c3aed" transparent opacity={0.35} blending={THREE.AdditiveBlending} />
+        <sphereGeometry args={[1.8, 32, 32]} />
+        <meshBasicMaterial color="#7c3aed" transparent opacity={0.22} blending={THREE.AdditiveBlending} />
       </mesh>
       <mesh position={[-5, -1, -6]}>
-        <sphereGeometry args={[1.1, 32, 32]} />
-        <meshBasicMaterial color="#22d3ee" transparent opacity={0.25} blending={THREE.AdditiveBlending} />
+        <sphereGeometry args={[1.4, 32, 32]} />
+        <meshBasicMaterial color="#22d3ee" transparent opacity={0.18} blending={THREE.AdditiveBlending} />
       </mesh>
       <mesh position={[1, 3, -5]}>
-        <sphereGeometry args={[0.9, 32, 32]} />
-        <meshBasicMaterial color="#a78bfa" transparent opacity={0.3} blending={THREE.AdditiveBlending} />
+        <sphereGeometry args={[1.2, 32, 32]} />
+        <meshBasicMaterial color="#a78bfa" transparent opacity={0.2} blending={THREE.AdditiveBlending} />
       </mesh>
     </group>
   );
