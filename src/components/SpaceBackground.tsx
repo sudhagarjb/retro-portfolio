@@ -40,7 +40,7 @@ function StarsField() {
   });
   return (
     <group ref={group}>
-      <Stars radius={110} depth={70} count={4000} factor={2.5} saturation={0.9} fade speed={0.5} />
+      <Stars radius={110} depth={70} count={14000} factor={2.5} saturation={0.9} fade speed={0.5} />
     </group>
   );
 }
