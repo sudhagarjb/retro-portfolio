@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, ArrowDown, Sparkles, Star } from "lucide-react";
 import useSWR from "swr";
 import Link from "next/link";
-import Image from "next/image";
-import clsx from "clsx";
-import LinkedInFeed from "@/components/LinkedInFeed";
+
 
 type GithubRepo = {
   id: number;
@@ -186,14 +184,6 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* LinkedIn Feed */}
-      <section className="section" id="linkedin">
-        <div className="max-w-6xl mx-auto">
-          {SECTION_TITLE("LinkedIn Feed")}
-          <LinkedInFeed />
         </div>
       </section>
 
