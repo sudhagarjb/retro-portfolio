@@ -24,26 +24,16 @@ export default function LinkedInFeed() {
   const posts = data?.posts || [];
   const configured = data?.configured ?? false;
 
+  // If not configured, hide the feed entirely (no noisy messaging)
+  if (!isLoading && !configured) return null;
+
   return (
     <div className="grid md:grid-cols-2 gap-6">
-      {isLoading && (
-        <div className="text-purple-200/70">Loading LinkedIn posts…</div>
-      )}
+      {isLoading && null}
 
-      {!isLoading && posts.length === 0 && (
+      {!isLoading && configured && posts.length === 0 && (
         <div className="card-gradient rounded-xl p-6">
-          <p className="text-purple-200/80">
-            {configured
-              ? "No recent posts found."
-              : "Connect LinkedIn to show your latest posts here. Add LINKEDIN_ACCESS_TOKEN and LINKEDIN_MEMBER_URN in .env.local and redeploy."}
-          </p>
-          <Link
-            href="https://www.linkedin.com/in/sudhagarjb"
-            target="_blank"
-            className="inline-block mt-3 underline text-purple-300"
-          >
-            View LinkedIn profile →
-          </Link>
+          <p className="text-purple-200/80">No recent posts.</p>
         </div>
       )}
 

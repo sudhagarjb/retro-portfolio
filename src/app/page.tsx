@@ -192,7 +192,7 @@ export default function Home() {
       {/* LinkedIn Feed */}
       <section className="section" id="linkedin">
         <div className="max-w-6xl mx-auto">
-          {SECTION_TITLE("LinkedIn Feed", "Latest posts from LinkedIn (connect token to enable)")}
+          {SECTION_TITLE("LinkedIn Feed")}
           <LinkedInFeed />
         </div>
       </section>
