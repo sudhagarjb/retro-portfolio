@@ -6,6 +6,7 @@ import useSWR from "swr";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
+import LinkedInFeed from "@/components/LinkedInFeed";
 
 type GithubRepo = {
   id: number;
@@ -94,7 +95,7 @@ export default function Home() {
                   <Sparkles className="w-24 h-24 text-purple-300" />
                 </div>
                 <p className="mt-4 text-purple-200/80 text-sm">
-                  Crafting high‑impact DX and animation‑forward interfaces.
+                  Delivering innovative full‑stack solutions across diverse requirements.
                 </p>
               </div>
             </motion.div>
@@ -166,18 +167,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills */}
-      <section className="section" id="skills">
+      {/* Tools & Learning */}
+      <section className="section" id="learning">
         <div className="max-w-6xl mx-auto">
-          {SECTION_TITLE("Skills", "End-to-end engineering across the stack")}
+          {SECTION_TITLE("Tools & Learning", "Focused on DX, system design, observability, and cloud tooling")}
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { title: "Languages", list: "JavaScript, TypeScript, Ruby, Python" },
-              { title: "Frontend", list: "Next.js, Vue.js, HTML, CSS" },
-              { title: "Backend", list: "Node.js, NestJS, Ruby on Rails, Kafka, Redis, GraphQL" },
-              { title: "Database", list: "MySQL, SQL, MongoDB" },
-              { title: "Tools", list: "AWS, Docker, Datadog, Rollbar, CloudWatch, S3, CI/CD" },
-              { title: "Others", list: "System Design, Design Patterns, Agile, Jest" },
+              { title: "Observability", list: "Datadog, Rollbar, CloudWatch, Logs, Dashboards" },
+              { title: "Cloud & Storage", list: "AWS, S3, Docker" },
+              { title: "Messaging", list: "Kafka, Redis" },
+              { title: "APIs", list: "GraphQL, REST, Microservices" },
+              { title: "CI/CD", list: "Pipelines, Vercel, GitHub Actions" },
+              { title: "Frontend DX", list: "Next.js, Animations, Framer Motion, R3F" },
             ].map((s, i) => (
               <motion.div key={s.title} className="card-gradient rounded-xl p-5" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.08 }} viewport={{ once: true }}>
                 <h4 className="font-semibold text-purple-100">{s.title}</h4>
@@ -185,6 +186,14 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* LinkedIn Feed */}
+      <section className="section" id="linkedin">
+        <div className="max-w-6xl mx-auto">
+          {SECTION_TITLE("LinkedIn Feed", "Latest posts from LinkedIn (connect token to enable)")}
+          <LinkedInFeed />
         </div>
       </section>
 
